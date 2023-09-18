@@ -61,34 +61,48 @@ public class Main {
         System.out.println("В школе, где " + classes + " классов, нужно " + whiteCount + " банок белой краски и " + brownCount + " банок коричневой краски");
 
         // Задание 6
-        int bananaWeight = 5 * 80;
-        int milkWeight = 2 * 105;
-        int iceWeight = 2 * 100;
-        int eggsWeight = 4 * 7;
-        float Weight = bananaWeight + milkWeight + iceWeight + eggsWeight;
-        float weightKg = Weight / 1000;
-        System.out.println("Вес завтрака в граммах: " + Weight);
+
+
+        int banana = 5;
+        int milk = 200;
+        int iceCream = 2;
+        int eggs = 4;
+
+        int bananaWeight = 80;
+        int milkWeight = 105;
+        int iceWeight = 100;
+        int eggsWeight = 7;
+        float weight = bananaWeight * banana + milkWeight * milk /100 + iceWeight * iceCream + eggsWeight * eggs;
+        float weightKg = weight / 1000;
+        System.out.println("Вес завтрака в граммах: " + weight);
         System.out.println("Вес завтрака в килограммах: " + weightKg);
 
         // Задание 7
 
-        int Days1 = 7 * 1000 / 250;
-        int Days2 = 7 * 1000 / 500;
-        int avrDays = (Days1 + Days2) / 2;
-        System.out.println("Дней при 250 гр.:" + Days1);
-        System.out.println("Дней при 500 гр.:" + Days2);
+        int weightSport = 7 * 1000;
+        int days1 = weightSport / 250;
+        int days2 = weightSport / 500;
+        int avrDays = (days1 + days2) / 2;
+        System.out.println("Дней при 250 гр.:" + days1);
+        System.out.println("Дней при 500 гр.:" + days2);
         System.out.println("Среднее количество дне:" + avrDays);
 
         // Задание 8
 
-        int Masha = 67760;
-        int Denis = 83690;
-        int Kristina = 76230;
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+        double dopMasha = masha * 1.1;
+        double dopDenis = denis * 1.1;
+        double dopKristina = kristina * 1.1;
+        double difMasha = dopMasha * 12 - masha * 12;
+        double difDenis = dopDenis * 12 - denis * 12;
+        double difKristina = dopKristina * 12 - kristina * 12;
 
 
-        System.out.println("Маша теперь получает " + (Masha * 1.1) + " рублей. Годовой доход вырос на " + (Masha * 1.1 * 12 - Masha * 12) + " рублей");
-        System.out.println("Денис теперь получает " + (Denis * 1.1) + " рублей. Годовой доход вырос на " + (Denis * 1.1 * 12 - Denis * 12) + " рублей");
-        System.out.println("Кристина теперь получает " + (Kristina * 1.1) + " рублей. Годовой доход вырос на " + (Kristina * 1.1 * 12 - Kristina * 12) + " рублей");
+        System.out.println("Маша теперь получает " + dopMasha + " рублей. Годовой доход вырос на " + difMasha + " рублей");
+        System.out.println("Денис теперь получает " + dopDenis + " рублей. Годовой доход вырос на " + difDenis + " рублей");
+        System.out.println("Кристина теперь получает " + dopKristina + " рублей. Годовой доход вырос на " + difKristina + " рублей");
 
 
 
